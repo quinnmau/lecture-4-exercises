@@ -20,8 +20,7 @@ describe_difference <- function(a,b) {
   diff <- length(a) - length(b)
   if(diff > 0) {
     sentence <- paste('Your first vector is longer by', diff, 'elements')
-  }
-  else {
+  } else {
     sentence <- paste('Your second vector is longer by', -diff, 'elements')
   }
   return(sentence)
@@ -39,8 +38,7 @@ describe_difference <- function(a,b) {
   if(diff > 0) {
     vector_name <- deparse(substitute(a))
     sentence <- paste('Vector', vector_name, 'is longer by', diff, 'elements')
-  }
-  else {
+  } else {
     vector_name <- deparse(substitute(b))
     sentence <- paste('Vector', vector_name, 'is longer by', -diff, 'elements')
   }
